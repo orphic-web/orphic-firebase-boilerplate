@@ -1,0 +1,165 @@
+[debug] [2022-05-24T22:57:43.527Z] ----------------------------------------------------------------------
+[debug] [2022-05-24T22:57:43.528Z] Command:       /Users/oli/.nvm/versions/node/v18.2.0/bin/node /Users/oli/.nvm/versions/node/v18.2.0/bin/firebase emulators:start
+[debug] [2022-05-24T22:57:43.529Z] CLI Version:   11.0.0
+[debug] [2022-05-24T22:57:43.529Z] Platform:      darwin
+[debug] [2022-05-24T22:57:43.530Z] Node Version:  v18.2.0
+[debug] [2022-05-24T22:57:43.531Z] Time:          Tue May 24 2022 18:57:43 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-05-24T22:57:43.531Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-24T22:57:43.621Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-24T22:57:43.622Z] > authorizing via signed-in user (olivier@orphic.ca)
+[debug] [2022-05-24T22:57:43.715Z] java version "18" 2022-03-22
+Java(TM) SE Runtime Environment (build 18+36-2087)
+
+[debug] [2022-05-24T22:57:43.718Z] Java HotSpot(TM) 64-Bit Server VM (build 18+36-2087, mixed mode, sharing)
+
+[debug] [2022-05-24T22:57:43.720Z] Parsed Java major version: 18
+[info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
+[debug] [2022-05-24T22:57:43.736Z] [hub] writing locator at /var/folders/5f/rf2p2gg954ddwhrybfm_t6m40000gn/T/hub-orphic-boilerplate.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-05-24T22:57:43.763Z] defaultcredentials: writing to file /Users/oli/.config/firebase/olivier_orphic_ca_application_default_credentials.json
+[debug] [2022-05-24T22:57:43.765Z] Setting GAC to /Users/oli/.config/firebase/olivier_orphic_ca_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/oli/.config/firebase/olivier_orphic_ca_application_default_credentials.json"}}
+[debug] [2022-05-24T22:57:43.769Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/orphic-boilerplate/adminSdkConfig [none]
+[debug] [2022-05-24T22:57:44.304Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/orphic-boilerplate/adminSdkConfig 200
+[debug] [2022-05-24T22:57:44.306Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/orphic-boilerplate/adminSdkConfig {"projectId":"orphic-boilerplate","storageBucket":"orphic-boilerplate.appspot.com","locationId":"us-central"}
+[debug] [2022-05-24T22:57:44.344Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-05-24T22:57:44.345Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-24T22:57:44.345Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/oli/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.3.jar","--host","127.0.0.1","--port",8080,"--rules","/Users/oli/Documents/dev/clients/Orphic/orphic-firebase-boilerplate/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/oli/.cache/firebase/emulators/cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--rules\",\"/Users/oli/Documents/dev/clients/Orphic/orphic-firebase-boilerplate/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-05-24T22:57:44.864Z] May 24, 2022 6:57:44 P.M. com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:51758
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 6:57:44 P.M. com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:51758\n"}}
+[debug] [2022-05-24T22:57:44.875Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-05-24T22:57:44.876Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nDev App Server is now running.\n\n"}}
+[debug] [2022-05-24T22:57:50.255Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-24T22:57:50.258Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-05-24T22:57:50.258Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","/Users/oli/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"/Users/oli/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-05-24T22:57:50.379Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/oli/Documents/dev/clients/Orphic/orphic-firebase-boilerplate/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/oli/Documents/dev/clients/Orphic/orphic-firebase-boilerplate/functions\" for Cloud Functions..."}}
+[debug] [2022-05-24T22:57:50.564Z] Validating nodejs source
+[debug] [2022-05-24T22:57:52.190Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-05-24T22:57:52.191Z] Building nodejs source
+[debug] [2022-05-24T22:57:52.191Z] Analyzing nodejs backend spec
+[debug] [2022-05-24T22:57:52.198Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-05-24T22:57:52.469Z] Serving at port 9005
+
+[debug] [2022-05-24T22:57:52.518Z] Got response from /__/functions.yaml {"endpoints":{"user-createUserAccount":{"platform":"gcfv1","labels":{},"region":["us-central1"],"callableTrigger":{},"entryPoint":"user.createUserAccount"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-05-24T22:57:52.529Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions[us-central1-user-createUserAccount]: http function initialized (http://localhost:5001/orphic-boilerplate/us-central1/user-createUserAccount). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/orphic-boilerplate/us-central1/user-createUserAccount)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://localhost:4000/firestore │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-05-24T22:58:00.727Z] May 24, 2022 6:58:00 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 6:58:00 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T22:58:00.772Z] May 24, 2022 6:58:00 P.M. com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 6:58:00 P.M. com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-05-24T22:58:04.709Z] May 24, 2022 6:58:04 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 6:58:04 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T22:58:06.767Z] May 24, 2022 6:58:06 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 6:58:06 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T22:58:08.819Z] May 24, 2022 6:58:08 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 6:58:08 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T22:58:11.356Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast [none]
+[debug] [2022-05-24T22:58:11.357Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"eventId":"6881b854-ec16-40a7-adf2-82d911f7239e","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/orphic-boilerplate","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-05-24T22:58:11.354Z","data":{"uid":"kRCwjeWlN4KG3FbmfyvMiblWaAb1","email":"asd@asd.com","emailVerified":false,"metadata":{"creationTime":"2022-05-24T22:58:11.353Z","lastSignInTime":"2022-05-24T22:58:11.353Z"},"customClaims":{},"providerData":[{"providerId":"password","email":"asd@asd.com","federatedId":"asd@asd.com","rawId":"asd@asd.com"}]}}
+[debug] [2022-05-24T22:58:11.386Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast 200
+[debug] [2022-05-24T22:58:11.386Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-05-24T23:02:06.608Z] May 24, 2022 7:02:06 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:02:06 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T23:02:08.679Z] May 24, 2022 7:02:08 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:02:08 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T23:02:10.748Z] May 24, 2022 7:02:10 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:02:10 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T23:02:12.819Z] May 24, 2022 7:02:12 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:02:12 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T23:02:14.854Z] May 24, 2022 7:02:14 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:02:14 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T23:02:16.998Z] May 24, 2022 7:02:16 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:02:16 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-24T23:03:47.440Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast [none]
+[debug] [2022-05-24T23:03:47.446Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"eventId":"5da81167-e43a-4f47-bcb5-be1eb2f5270a","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/orphic-boilerplate","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-05-24T23:03:47.438Z","data":{"uid":"fVV54labaOPV0gbuaFSWjmFFezcz","email":"asd@dawd.dawd","emailVerified":false,"metadata":{"creationTime":"2022-05-24T23:03:47.436Z","lastSignInTime":"2022-05-24T23:03:47.435Z"},"customClaims":{},"providerData":[{"providerId":"password","email":"asd@dawd.dawd","federatedId":"asd@dawd.dawd","rawId":"asd@dawd.dawd"}]}}
+[debug] [2022-05-24T23:03:47.478Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast 200
+[debug] [2022-05-24T23:03:47.478Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-05-24T23:45:21.894Z] May 24, 2022 7:45:21 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 24, 2022 7:45:21 P.M. io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-05-25T00:12:43.432Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast [none]
+[debug] [2022-05-25T00:12:43.434Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"eventId":"1b47275f-9cce-4bf2-94b2-5532ee992e5a","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/orphic-boilerplate","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-05-25T00:12:43.431Z","data":{"uid":"lEchKZQxYn7Crv9CxrSALldYDYyy","email":"asdas@asd.com","emailVerified":false,"metadata":{"creationTime":"2022-05-25T00:12:43.429Z","lastSignInTime":"2022-05-25T00:12:43.428Z"},"customClaims":{},"providerData":[{"providerId":"password","email":"asdas@asd.com","federatedId":"asdas@asd.com","rawId":"asdas@asd.com"}]}}
+[debug] [2022-05-25T00:12:43.452Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast 200
+[debug] [2022-05-25T00:12:43.452Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"status":"multicast_acknowledged"}
+[info] i  To verify the email address asdas@asd.com, follow this link: http://localhost:9099/emulator/action?mode=verifyEmail&lang=en&oobCode=L2GrjkUYGHPSAUKEPTym8r-nX9ckutws4lM2cU6NMGJ5BgQoPz67-r&apiKey=fake-api-key {"metadata":{"emulator":{"name":"auth"},"message":"To verify the email address asdas@asd.com, follow this link: http://localhost:9099/emulator/action?mode=verifyEmail&lang=en&oobCode=L2GrjkUYGHPSAUKEPTym8r-nX9ckutws4lM2cU6NMGJ5BgQoPz67-r&apiKey=fake-api-key"}}
+[info] i  To reset the password for asd@asd.com, follow this link: http://localhost:9099/emulator/action?mode=resetPassword&lang=en&oobCode=td1loDPF-wfyz4TjFn_WValkfH4zRXBdQ79ITXgapM6HiCodZZ0RD_&apiKey=fake-api-key&continueUrl=http%3A%2F%2Flocalhost%3A3000%2Flogin&newPassword=NEW_PASSWORD_HERE {"metadata":{"emulator":{"name":"auth"},"message":"To reset the password for asd@asd.com, follow this link: http://localhost:9099/emulator/action?mode=resetPassword&lang=en&oobCode=td1loDPF-wfyz4TjFn_WValkfH4zRXBdQ79ITXgapM6HiCodZZ0RD_&apiKey=fake-api-key&continueUrl=http%3A%2F%2Flocalhost%3A3000%2Flogin&newPassword=NEW_PASSWORD_HERE"}}
+[info] i  To reset the password for asd@asd.com, follow this link: http://localhost:9099/emulator/action?mode=resetPassword&lang=en&oobCode=-ZAxSlD0vtf5iyOSHJ-UMHFoG7bdiwMaLLa5C2NaOsuM0FXn7qIe9c&apiKey=fake-api-key&continueUrl=http%3A%2F%2Flocalhost%3A3000%2Flogin&newPassword=NEW_PASSWORD_HERE {"metadata":{"emulator":{"name":"auth"},"message":"To reset the password for asd@asd.com, follow this link: http://localhost:9099/emulator/action?mode=resetPassword&lang=en&oobCode=-ZAxSlD0vtf5iyOSHJ-UMHFoG7bdiwMaLLa5C2NaOsuM0FXn7qIe9c&apiKey=fake-api-key&continueUrl=http%3A%2F%2Flocalhost%3A3000%2Flogin&newPassword=NEW_PASSWORD_HERE"}}
+[debug] [2022-05-25T00:20:49.034Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast [none]
+[debug] [2022-05-25T00:20:49.035Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"eventId":"bcfe98ab-617a-4ba6-845a-42b902cc9854","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/orphic-boilerplate","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-05-25T00:20:49.033Z","data":{"uid":"SzlEqKrLfDYae6wm33juCPSEC59v","email":"asdasd2asd@asd.com","emailVerified":false,"metadata":{"creationTime":"2022-05-25T00:20:49.032Z","lastSignInTime":"2022-05-25T00:20:49.032Z"},"customClaims":{},"providerData":[{"providerId":"password","email":"asdasd2asd@asd.com","federatedId":"asdasd2asd@asd.com","rawId":"asdasd2asd@asd.com"}]}}
+[debug] [2022-05-25T00:20:49.060Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast 200
+[debug] [2022-05-25T00:20:49.060Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/orphic-boilerplate/trigger_multicast {"status":"multicast_acknowledged"}
+[info] i  To verify the email address asdasd2asd@asd.com, follow this link: http://localhost:9099/emulator/action?mode=verifyEmail&lang=en&oobCode=kJhZ2AWgm5g3NqjGEABJplTop8RNrbrN9wIba8EBfwPRC1U86ziyG0&apiKey=fake-api-key {"metadata":{"emulator":{"name":"auth"},"message":"To verify the email address asdasd2asd@asd.com, follow this link: http://localhost:9099/emulator/action?mode=verifyEmail&lang=en&oobCode=kJhZ2AWgm5g3NqjGEABJplTop8RNrbrN9wIba8EBfwPRC1U86ziyG0&apiKey=fake-api-key"}}
