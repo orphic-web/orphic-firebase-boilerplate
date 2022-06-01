@@ -1,7 +1,6 @@
-
 /**
  * @desc Trigger that execute when any user is updated.
- * @param {user: User
+ * @param {user: User}
  */
 // exports.onUpdateUser = functions.firestore
 //   .document('Users/{userId}')

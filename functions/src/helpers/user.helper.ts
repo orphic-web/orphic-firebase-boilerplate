@@ -1,4 +1,5 @@
 import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 
 export default class UserService {
   /**
@@ -11,7 +12,23 @@ export default class UserService {
    */
   static async createUserAccount(name: string, email: string, userId: string, birthDate: Date) {
     try {
-      console.log('create user')
+      console.log('create user');
+    } catch (e) {
+      const error: any = e;
+      throw new functions.https.HttpsError(error.code, error.message);
+    }
+  }
+
+  /**
+   * Helper that checks if the specified userId is a super admin
+   * @param {string} userId
+   * @returns {boolean} super admin or not
+   */
+  static async checkIfSuperAdminResponse(userId: string) {
+    try {
+      const snapshot = await admin.firestore().collection('SuperAdmins').doc(userId).get();
+      if (snapshot.data()) return true;
+      return false;
     } catch (e) {
       const error: any = e;
       throw new functions.https.HttpsError(error.code, error.message);
