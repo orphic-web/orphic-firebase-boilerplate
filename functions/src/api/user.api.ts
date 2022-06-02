@@ -38,7 +38,6 @@ exports.checkIfSuperAdmin = functions.region('us-central1').https.onCall(async (
   try {
     // Permission - Checks if the request comes from an authenticated user
     if (!context.auth) throw new functions.https.HttpsError(ErrorCodes.PERMISSION_DENIED, 'Permission denied');
-    console.log(context);
     const handleCheckIfSuperAdminResponse = await handleCheckIfSuperAdmin(context.auth.uid);
     return handleCheckIfSuperAdminResponse;
   } catch (e) {
