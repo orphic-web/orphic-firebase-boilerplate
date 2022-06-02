@@ -1,31 +1,26 @@
+import * as functions from 'firebase-functions';
+import ErrorCodes from '../models/enums/ErrorCodes';
+import SupportedLanguages from '../models/enums/SupportedLanguages';
+import { isString } from './primitiveType';
+
 /**
- * @desc TypeChecker that verify the format of a user Object
- * @param {user: User}
- * @returns {user: User}
+ *  TypeChecker that verify the format of a user Object
+ *
+ * @param {string} language
+ * @returns {SupportedLanguages} language
  */
 
-// export function isUser(user: User) {
-//   try {
-//     if (!user) throw new functions.https.HttpsError(ErrorCodes.INVALID_ARGUMENT, 'Invalid argument : user is undefined.');
+export async function isSupportedLanguage(language: string): Promise<SupportedLanguages> {
+  try {
+    if (!language) throw new functions.https.HttpsError(ErrorCodes.INVALID_ARGUMENT, 'Invalid argument : language is undefined.');
+    await isString('language', language) as SupportedLanguages;
 
-//     const newUser = {
-//       userId: isString('userId', user.userId),
-//       email: isString('email', user.email),
-//       name: isString('name', user.name),
-//       avatarPath: isString('avatarPath', user.avatarPath),
-//       userType: isString('userType', user.userType),
-//       familyId: isString('familyId', user.familyId),
-//       consecutiveGamingTimer: isNumber('consecutiveGamingTimer', user.consecutiveGamingTimer),
-//       weeklyGamingTimer: isNumber('weeklyGamingTimer', user.weeklyGamingTimer),
-//       weeklySportTimer: isNumber('weeklySportTimer', user.weeklySportTimer),
-//       birthDate: isStringDate('birthDate', user.birthDate),
-//       activeEntryId: isString('activeEntryId', user.activeEntryId),
-//       stripeCustomer: isStripeCustomer(user.stripeCustomer),
-//       language: isString('language', user.language),
-//     };
-//     return newUser;
-//   } catch (e) {
-//     const error: any = e;
-//     throw new functions.https.HttpsError(error.code, error.message);
-//   }
-// }
+    if (!(<any>Object).values(SupportedLanguages).includes(language)) {
+      throw new functions.https.HttpsError(ErrorCodes.UNIMPLEMENTED, `Invalid argument : ${language} is not supported yet.`);
+    }
+    return language as SupportedLanguages;
+  } catch (e) {
+    const error: any = e;
+    throw new functions.https.HttpsError(error.code, error.message);
+  }
+}
